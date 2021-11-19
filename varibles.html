@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html leng="en">
+	<head>
+		<title>Vars</title>
+	</head>
+	<body onload="myVars()">
+		<script type="text/javascript">
+
+			function myVars(){ //
+				
+				let l = "my let string";
+				document.write(l + "<br>");
+				// let cannot be redeclared
+				// let l = 2;
+				
+				var v = "my var string";
+				document.write(v + "<br>");
+				// var can be redeclared
+				// var v = 2;
+
+				// can use vars before it is declared
+				document.write(v2 + "<br>");
+				var v2 = "declared after"
+
+				const myConst = "my const string";
+				document.write(myConst + "<br>");
+				// const must be assigned value and cannot be reassigned 
+				// const myConst = "cannot do this";
+
+				const myArray = ["This", "is", "my", "first", "const", "array"];
+				document.write(myArray + "<br>");
+				// const arrays cannot be reassigned but can change elements inside
+				myArray[3] = "second";
+				document.write(myArray + "<br>");
+		}
+		</script>
+	</body>
+</html>
